@@ -6,7 +6,7 @@ FoamFile {
     object      mountainDict;
 }
 
-mountainType        SCHAER_COS;
+mountainType        SCHAER_EXP;
 mountainHalfWidth	5e3;
 mountainPeakHeight	3.2e3;
 mountainWavelength	4e3;

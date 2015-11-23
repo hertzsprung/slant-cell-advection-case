@@ -30,7 +30,7 @@ diffusioneCoefficient diffusionCoeff [0 2 -1 0 0] 0;
 // Brunt Vailsalla frequency for different layers of atmosphere
 BruntVaisallaFreq  1(0.01);
 // Extents of the layers (array should be one longer)
-zN  2(0 30.0001e3);
+zN  2(-100 30.0001e3);
 
 // Sponge layer coefficients
 spongeBase 20e3;

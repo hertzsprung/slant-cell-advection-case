@@ -14,7 +14,7 @@ deltaT          8;
 writeControl    runTime;
 writeInterval   128;
 purgeWrite      0;
-writeFormat     binary;
+writeFormat     ascii;
 writePrecision  15;
 writeCompression uncompressed;
 timeFormat      general;

@@ -4,6 +4,7 @@ set -e
 rm -rf [0-9]*
 rm -rf constant/theta_init
 rm -rf constant/polyMesh/sets
+rm -rf constant/*Weights
 
 blockMesh
 
@@ -24,8 +25,11 @@ subsetMesh -patch ground -overwrite bigCells
 # find any zeroAreaFaces
 checkMesh -constant
 
-# remove them
-collapseEdges -constant -overwrite -collapseFaceSet zeroAreaFaces
+# remove them if there are any
+if [ -e constant/polyMesh/zeroAreaFaces]
+then
+	collapseEdges -constant -overwrite -collapseFaceSet zeroAreaFaces
+fi
 
 # final sanity check
 checkMesh -constant

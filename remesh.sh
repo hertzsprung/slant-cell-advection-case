@@ -5,4 +5,4 @@ checkCellVolumes
 setSet -constant -noVTK -batch removeTinyCells
 subsetMesh -patch ground -overwrite bigCells
 checkMesh -constant
-collapseFaces -constant -overwrite -collapseFaceSet zeroAreaFaces
+collapseEdges -constant -overwrite -collapseFaceSet zeroAreaFaces

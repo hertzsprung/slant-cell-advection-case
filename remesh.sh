@@ -3,4 +3,4 @@ set -e
 slantMesh
 checkCellVolumes
 setSet -constant -noVTK -batch removeTinyCells
-subsetMesh -patch ground -overwrite bigCell
+subsetMesh -patch ground -overwrite bigCells

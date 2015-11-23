@@ -1,6 +1,12 @@
 #!/bin/bash
 set -e
 
+rm -rf [0-9]*
+rm -rf constant/theta_init
+rm -rf constant/polyMesh/sets
+
+blockMesh
+
 # move all points beneath the surface up to the surface
 # this creates cells with tiny volumes and faces with tiny areas
 slantMesh
@@ -23,3 +29,5 @@ collapseEdges -constant -overwrite -collapseFaceSet zeroAreaFaces
 
 # final sanity check
 checkMesh -constant
+
+cp init/theta_init constant/

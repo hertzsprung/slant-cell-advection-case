@@ -1,5 +1,3 @@
-// dummy file to placate blockMesh
-
 FoamFile {
     version     2.0;
     format      ascii;
@@ -11,13 +9,18 @@ FoamFile {
 startFrom       startTime;
 startTime       0;
 stopAt          endTime;
-endTime         0;
-deltaT          5;
+endTime         18000;
+deltaT          8;
 writeControl    runTime;
-writeInterval   1;
+writeInterval   128;
 purgeWrite      0;
-writeFormat     ascii;
+writeFormat     binary;
 writePrecision  15;
 writeCompression uncompressed;
 timeFormat      general;
 timePrecision   6;
+runTimeModifiable yes;
+adjustTimeStep no;
+maxCo          1;
+libs           ("libOpenFOAM.so" "libExnerTheta.so" "libspecie.so" "libfiniteVolumeAtmos.so");
+

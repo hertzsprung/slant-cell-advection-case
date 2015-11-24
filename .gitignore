@@ -1,3 +1,5 @@
 *.OpenFOAM
 [0-9]*
 .setSet
+gmt.history
+*.pdf

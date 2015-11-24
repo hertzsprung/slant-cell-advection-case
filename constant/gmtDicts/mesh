@@ -1,0 +1,25 @@
+FoamFile {
+    version         1.4;
+    format          ascii;
+
+    root            "";
+    case            "";
+    instance        "constant";
+    local           "";
+
+    class           dictionary;
+    object          gmtDict;
+}
+
+projection "X5i/1.8i";
+projection2D XZ;
+separateLegend true;
+plotBoundaryDots false;
+plotZeroValuePolys false;
+
+FieldsToPlot (
+	[none mesh "black"]
+);
+
+region "-9e3/-8e3/-100/100";
+boundaryMarks "100/50WSen";

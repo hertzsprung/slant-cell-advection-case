@@ -18,9 +18,10 @@ plotBoundaryDots false;
 plotZeroValuePolys false;
 
 FieldsToPlot (
-	[neiWeights rawValues 0 0 0 "$GMTU/colours/red_white_blue.cpt"]
+	[neiWeights rawValues -1.0 1.0 0.1 "$GMTU/colours/red_white_blue.cpt"]
 	[none mesh "gray"]
+	[neiWeights rawBoundaryValues -1.0 1.0 0.1 "$GMTU/colours/red_white_blue.cpt"]
 );
 
-region "-5e3/0e3/0/2e3";
+region "2e3/7e3/1e3/2e3";
 boundaryMarks "5e3/1e3WSen";

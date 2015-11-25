@@ -8,5 +8,5 @@ FoamFile {
 
 mountainType        SCHAER_EXP;
 mountainHalfWidth	5e3;
-mountainPeakHeight	3.2e3;
+mountainPeakHeight	3e3;
 mountainWavelength	4e3;

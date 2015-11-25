@@ -26,7 +26,7 @@ subsetMesh -patch ground -overwrite bigCells
 checkMesh -constant
 
 # remove them if there are any
-if [ -e constant/polyMesh/zeroAreaFaces]
+if [ -e constant/polyMesh/sets/zeroAreaFaces ]
 then
 	collapseEdges -constant -overwrite -collapseFaceSet zeroAreaFaces
 fi

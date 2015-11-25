@@ -1,0 +1,26 @@
+FoamFile {
+    version         1.4;
+    format          ascii;
+
+    root            "";
+    case            "";
+    instance        "constant";
+    local           "";
+
+    class           dictionary;
+    object          gmtDict;
+}
+
+projection "X8i/5i";
+projection2D XZ;
+separateLegend false;
+plotBoundaryDots false;
+plotZeroValuePolys false;
+
+FieldsToPlot (
+	[T_diff rawValues -10 10 2 "$GMTU/colours/red_white_blue.cpt"]
+	[none mesh "gray"]
+);
+
+region "-20e3/20e3/0/8e3";
+boundaryMarks "10e3/2e3WSen";

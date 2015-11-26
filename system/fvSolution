@@ -19,6 +19,6 @@ SIMPLE {
     nNonOrthogonalCorrectors 1;
 }
 
-/*debug{
-    interpolationWeightsFaceIndex 4118;
-}*/
+debug{
+    interpolationWeightsFaceIndex 4117;
+}

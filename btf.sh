@@ -7,5 +7,5 @@ rm -rf constant/polyMesh/sets
 rm -rf constant/*Weights
 
 blockMesh
-add2dMountain
+terrainFollowingMesh
 cp init/theta_init constant/

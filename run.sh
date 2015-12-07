@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+cp init/theta_init constant/
 setVelocityField
 setTheta
 mv 0/theta 0/T

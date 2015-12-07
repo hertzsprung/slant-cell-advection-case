@@ -3,6 +3,7 @@ set -e
 
 rm -rf [0-9]*
 rm -rf constant/theta_init
+rm -rf constant/thetaf
 rm -rf constant/polyMesh/sets
 rm -rf constant/*Weights*
 
@@ -33,5 +34,3 @@ fi
 
 # final sanity check
 checkMesh -constant
-
-cp init/theta_init constant/
